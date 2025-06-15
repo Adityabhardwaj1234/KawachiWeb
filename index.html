@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>15th June - In Loving Memory</title>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
+
+    body {
+      font-family: "Inter", sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 1rem;
+      color: #333;
+    }
+
+    .glass-morphism {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(20px);
+      border-radius: 16px;
+      padding: 2rem;
+      max-width: 700px;
+      width: 100%;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    h1 {
+      color: red;
+      font-family: Verdana, Geneva, sans-serif;
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      animation: float 4s ease-in-out infinite;
+      cursor: default;
+    }
+
+    h3 {
+      font-weight: 600;
+      margin: 0.5rem 0;
+    }
+
+    p {
+      font-size: 1.1rem;
+      margin-top: 1rem;
+      line-height: 1.6;
+    }
+
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-8px);
+      }
+    }
+
+    @media (max-width: 640px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      .glass-morphism {
+        padding: 1.25rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="glass-morphism">
+    <h1>Vinay Kumar</h1>
+    <h3>The Legend of 15th June</h3>
+    <h3>Died on 17 November 2021</h3>
+    <p>
+      My father, Vinay Kumar, was not just a man of discipline and strength, but also a soul deeply passionate about coding. 
+      He believed in the power of technology to transform lives and solve real-world problems. His dedication to learning 
+      and creating inspired everyone around him. Though he left us on 17th November 2021, his dream did not die. I have taken 
+      it upon myself to honor his memory by continuing the journey he once began. Every line of code I write is a tribute 
+      to his legacy, and I strive each day to grow, learn, and become someone he would be proud of. However, I cannot remember his famous quote,
+      so here's mine: <strong>"Coding is not just a skill, it's a way to change the world by your skill."</strong> I carry his will with me, learning and getting better at it every day. 
+      By the way, this is the CSS code I wrote years ago with him and I still use it in almost every HTML file I create.
+    </p>
+  </div>
+
+  <script>
+    window.onload = function() {
+      function respect() {
+        const confirmation = window.confirm("Celebrating the life and legacy of Vinay Kumar!");
+        if (confirmation) {
+          const message = "Thank you for celebrating Vinay Kumar's life! Let's continue to honor his memory by pursuing our passions and making a difference in the world.";
+          alert(message);
+        } else {
+          alert("No worries! Remembering him is enough.");
+        }
+      }
+
+      respect(); // Call the function on page load
+    };
+  </script>
+</body>
+</html>
